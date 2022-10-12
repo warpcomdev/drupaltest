@@ -20,6 +20,7 @@ services:
     # mkdir -p web/sites; mkdir -p web/modules
     # docker run --rm drupaltest-drupal:latest tar -cC /var/www/asicamera/web/sites . | tar -xC web/sites
     # docker run --rm drupaltest-drupal:latest tar -cC /var/www/asicamera/web/modules . | tar -xC web/modules
+    # sudo chown -R 33:33 web/{modules,profiles,sites,themes}
     - ./web/modules:/var/www/asicamera/web/modules
     - ./web/profiles:/var/www/asicamera/web/profiles
     - ./web/sites:/var/www/asicamera/web/sites
